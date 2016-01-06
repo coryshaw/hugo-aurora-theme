@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+
+<div class="hero-image home" style="background-image:url(/images/coryshaw_boulder.jpg)">
+	{{ partial "primary-nav.html" . }}
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h1>{{ .Title }}</h1>
+			</div>
+		</div>
+	</div>
+	<p class="photo-credit">Photo Credit: Beau Rogers</p>
+</div>
+<div class="container content">
+	<div class="row">
+		<div class="column">
+			<p>I'm a website designer and developer living in beautiful Boulder, Colorado. I like to make digital things and occasionally wright about what's on my mind.</p>
+			<p>If you'd like, check out some of my <a href="/posts/">posts</a>, learn more <a href="/about/">about</a> me, or see what I'm up to right <a href="/now/">now</a>.</p>
+		</div>
+	</div>
+</div>
+{{ partial "sub-footer.html" . }}
+{{ partial "footer.html" . }}

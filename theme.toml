@@ -1,0 +1,11 @@
+name = "Aurora"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+description = "A minimalistic elegant theme for writing and reading."
+homepage = "http://coryshaw.com/"
+tags = ["single column", "minimal", "blog"]
+min_version = 0.14
+
+[author]
+  name = "Cory Shaw"
+  homepage = "http://coryshaw.com"

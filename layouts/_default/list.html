@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+<div class="hero-image" style="background-image:url(/images/coryshaw_sunset.jpg)">
+	{{ partial "primary-nav.html" . }}
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h1>{{ .Title }}</h1>
+			</div>
+		</div>
+	</div>
+	<p class="photo-credit">{{ if isset .Params "photocredit" }}Photo Credit: {{ .Params.photocredit }} | {{ end }}</p>
+</div>
+<ul class="posts-list">
+	{{ range .Data.Pages.ByPublishDate }}
+	<li>
+		<a class="list-link" href="{{ .Permalink }}" style="background-image:url({{ .Params.bgimgurl }})">
+			<div class="container">
+				<div class="row">
+					<div class="column">
+						{{ .Title }}
+						<p class="description">{{ .Description }}</p>
+					</div>
+				</div>
+			</div>
+			<time datetime="{{ .Date }}">Published: {{ .Date.Format "01-02-2006" }}</time>
+		</a>
+	</li>
+	{{ end }}
+</ul>
+
+{{ partial "sub-footer.html" . }}
+{{ partial "footer.html" . }}
