@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-<div class="hero-image" style="background-image:url(/images/coryshaw_sunset.jpg)">
+<div class="hero-image" style="background-image:url({{ .Site.Params.list.backgroundimage }})">
 	{{ partial "primary-nav.html" . }}
 	<div class="container">
 		<div class="row">
@@ -8,7 +8,7 @@
 			</div>
 		</div>
 	</div>
-	<p class="photo-credit">{{ if isset .Params "photocredit" }}Photo Credit: {{ .Params.photocredit }} | {{ end }}</p>
+	{{ if isset .Site.Params.list "photocredit" }}<p class="photo-credit">{{ .Site.Params.strings.photocredit }}: {{ .Site.Params.list.photocredit }}</p>{{ end }}
 </div>
 <ul class="posts-list">
 	{{ range .Data.Pages.ByPublishDate }}
@@ -22,7 +22,7 @@
 					</div>
 				</div>
 			</div>
-			<time datetime="{{ .Date }}">Published: {{ .Date.Format "01-02-2006" }}</time>
+			<time datetime="{{ .Date }}">{{ .Site.Params.strings.published }}: {{ .Date.Format "01-02-2006" }}</time>
 		</a>
 	</li>
 	{{ end }}

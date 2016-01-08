@@ -3,10 +3,9 @@
 		<div class="column">
 			<nav class="primary-nav" role="navigation">
 				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="/now/">Now</a></li>
-					<li><a href="/about/">About</a></li>
-					<li><a href="/posts/">Posts</a></li>
+					{{ range .Site.Params.navigation }}
+					<li><a href="{{.path}}">{{.name}}</a></li>
+					{{ end }}
 				</ul>
 			</nav>
 		</div>

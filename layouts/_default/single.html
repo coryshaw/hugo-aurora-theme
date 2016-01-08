@@ -9,7 +9,7 @@
 			</div>
 		</div>
 	</div>
-	<p class="photo-credit">{{ if isset .Params "photocredit" }}Photo Credit: {{ .Params.photocredit }} | {{ end }}<time datetime="{{ .Date }}">Published: {{ .Date.Format "01-02-2006" }}</time>{{ if isset .Params "updated" }} | <time datetime="{{ .Params.updated }}">Updated: {{ .Params.updated }}</time>{{ end }}</p>
+	<p class="photo-credit">{{ if isset .Params "photocredit" }}{{.Site.Params.strings.photocredit}}: {{ .Params.photocredit }} | {{ end }}<time datetime="{{ .Date }}">{{.Site.Params.strings.published}}: {{ .Date.Format "01-02-2006" }}</time>{{ if isset .Params "updated" }} | <time datetime="{{ .Params.updated }}">{{ .Site.Params.strings.updated }}: {{ .Params.updated }}</time>{{ end }}</p>
 </div>
 <div class="container content">
 	<div class="row">

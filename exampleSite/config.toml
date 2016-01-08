@@ -1,0 +1,43 @@
+baseurl = "http://mysite.com/"
+languageCode = "en-us"
+title = "My Awesome Site"
+theme = "aurora"
+[taxonomies]
+	tag = "tags"
+
+[params]
+	# Copyright text that displays in your footer next to the current year
+	copyright = "My Name"
+
+	# Enable Google Analytics by inserting your tracking code
+	googleanalyticsid = "UA-00000-00"
+
+	# Home/Index page background image and photo credit
+	[params.home]
+		backgroundimage = "/images/coryshaw_carribbean.jpg"
+		photocredit = "Cory Shaw"
+
+	# Define your primary navigation
+	[[params.navigation]]
+		name = "Home"
+		path = "/"
+	[[params.navigation]]
+		name = "About"
+		path = "/about/"
+	[[params.navigation]]
+		name = "Posts"
+		path = "/posts/"
+
+	# Background Image and photo credit for your list of posts page
+	[params.list]
+		backgroundimage = "/images/coryshaw_carribbean.jpg"
+		photocredit = "Cory Shaw"
+
+	# Customize or translate strings
+	[params.strings]
+		copyright = "Copyright"
+		photocredit = "Photo Credit"
+		tags = "Tags"
+		published = "Published"
+		updated = "Updated"
+

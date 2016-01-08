@@ -1,6 +1,6 @@
 name = "Aurora"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
+licenselink = "https://github.com/coryshaw/aurora/blob/master/LICENSE.md"
 description = "A minimalistic elegant theme for writing and reading."
 homepage = "http://coryshaw.com/"
 tags = ["single column", "minimal", "blog"]

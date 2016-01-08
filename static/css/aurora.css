@@ -759,15 +759,15 @@ img {
           transform-origin: 50% 50%;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   opacity: 0;
 }
 @keyframes titleanimate {
   0% {
     opacity: 0;
-    -webkit-transform: translate(25px, 0);
-            transform: translate(25px, 0);
+    -webkit-transform: translate(0, 25px);
+            transform: translate(0, 25px);
   }
   100% {
     opacity: 1;
