@@ -14,7 +14,6 @@ From there I added on a few custom styles to make the theme what it is.
 - [Getting started](#getting-started)
     - [The config file](#the-config-file)
     - [Change the hero background](#change-the-hero-background)
-    - [Add Google Analytics ID](#add-google-analytics-id) 
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -40,6 +39,7 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 - Customize the background image for each page
 - Give photo credit for every image you use that's not your own
 - Loads faster than Google :)
+
 
 ## Getting started
 
