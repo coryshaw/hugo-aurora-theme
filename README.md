@@ -14,11 +14,9 @@ From there I added on a few custom styles to make the theme what it is.
 - [Getting started](#getting-started)
     - [The config file](#the-config-file)
     - [Change the hero background](#change-the-hero-background)
-    - [Present your skills](#present-your-skills) 
-    - [Nearly finished](#nearly-finished)
+    - [Add Google Analytics ID](#add-google-analytics-id) 
 - [Contributing](#contributing)
 - [License](#license)
-- [Annotations](#annotations)
 
 
 ## Installation
@@ -51,6 +49,15 @@ After installing the Aurora Theme successfully it requires a just a few more ste
 ### The config file
 
 Take a look inside the [`exampleSite`](//github.com/coryshaw/hugo-aurora-theme/tree/master/exampleSite) folder of this theme. You'll find a file called [`config.toml`](//github.com/coryshaw/hugo-aurora-theme/blob/master/exampleSite/config.toml). To use it, copy the [`config.toml`](//github.com/coryshaw/hugo-aurora-theme/blob/master/exampleSite/config.toml) in the root folder of your Hugo site. Feel free to change the strings in this theme.
+
+Inside the config file you can:
+
+- Change the copyright text in your footer
+- Enable Google Analytics tracking for your site
+- Modify the background image and photo credit for your homepage
+- Define your primary navigation
+- Modify the background image and photo credit for your list page
+- Customize or translate the theme's strings
 
 ```
 baseurl = "http://mysite.com/"
@@ -118,5 +125,16 @@ On your Homepage, the Hero block is a bit taller. To modify your homepage hero i
 		backgroundimage = "/images/coryshaw_boulder.jpg"
 		photocredit = "Beau Rogers"
 ```
+
+## Contributing
+
+Did you find a bug or have an idea for a new feature? Feel free to use the [issue tracker](//github.com/coryshaw/hugo-aurora-theme/issues) to let me know, or make  a [pull request](//github.com/coryshaw/hugo-aurora-theme/pulls).
+
+
+## License
+
+This theme is released under the MIT license. For more information read the [License](//github.com/coryshaw/hugo-aurora-theme/blob/master/LICENSE.md).
+
+
 
 
