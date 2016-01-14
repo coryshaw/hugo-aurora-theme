@@ -45,6 +45,8 @@ For more information read the official [setup guide](//gohugo.io/overview/instal
 
 After installing the Aurora Theme successfully it requires a just a few more steps to get your site running.
 
+A good starting point is to take the contents of the "exampleSite" folder and place it at the root level of your site, then run "hugo server" in your terminal.
+
 
 ### The config file
 
