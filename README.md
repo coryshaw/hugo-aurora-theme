@@ -1,7 +1,7 @@
 # Aurora Hugo Theme
 Aurora is an elegant and minimalistic theme for the [Hugo](http://gohugo.io) static website engine.
 
-![Aurora Theme Screenshot](//raw.github.com/coryshaw/hugo-aurora-theme/master/images/screenshot.png)
+![Aurora Theme Screenshot](https://raw.github.com/coryshaw/hugo-aurora-theme/master/images/screenshot.png)
 
 Aurora was built on top of the [Skeleton](http://getskeleton.com/) CSS framework. It contains minimal base styles that provide mobile and tablet responsiveness, a nice grid system, and that's about it!
 
