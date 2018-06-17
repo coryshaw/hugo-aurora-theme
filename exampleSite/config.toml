@@ -1,4 +1,4 @@
-baseurl = "http://mysite.com/"
+baseURL = "http://example.com/"
 languageCode = "en-us"
 title = "My Awesome Site"
 theme = "aurora"

@@ -62,7 +62,7 @@ Inside the config file you can:
 - Customize or translate the theme's strings
 
 ```
-baseurl = "http://mysite.com/"
+baseURL = "http://example.com/"
 languageCode = "en-us"
 title = "My Awesome Site"
 theme = "aurora"
