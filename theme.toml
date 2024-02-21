@@ -4,8 +4,11 @@ licenselink = "https://github.com/coryshaw/aurora/blob/master/LICENSE.md"
 description = "A minimalistic elegant theme for writing and reading."
 homepage = "http://coryshaw.com/"
 tags = ["single column", "minimal", "blog"]
-min_version = 0.14
+min_version = "0.56.0"
 
 [author]
   name = "Cory Shaw"
   homepage = "http://coryshaw.com"
+
+[module]
+  path = "github.com/coryshaw/hugo-aurora-theme"
