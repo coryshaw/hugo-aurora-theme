@@ -11,7 +11,7 @@
 	{{ if isset .Site.Params.list "photocredit" }}<p class="photo-credit">{{ .Site.Params.strings.photocredit }}: {{ .Site.Params.list.photocredit }}</p>{{ end }}
 </div>
 <ul class="posts-list">
-	{{ range .Data.Pages.ByPublishDate }}
+	{{ range .Data.Pages.ByPublishDate.Reverse }}
 	<li>
 		<a class="list-link" href="{{ .Permalink }}" style="background-image:url({{ .Params.bgimgurl }})">
 			<div class="container">
