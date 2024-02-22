@@ -128,3 +128,15 @@ Found a bug or have a feature request? Use the [issue tracker](https://github.co
 ## License
 
 This theme is released under the MIT license. For more information read the [License](https://github.com/coryshaw/hugo-aurora-theme/blob/master/LICENSE.md).
+
+## Customizing CSS theme via LESS Styles
+
+Install the less-watch-compiler globally:
+
+`npm install -g less less-watch-compiler`
+
+Run the compiler in the theme directory:
+
+`less-watch-compiler`
+
+Make changes to less files and it will be auto compiled

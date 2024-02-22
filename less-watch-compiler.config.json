@@ -1,0 +1,8 @@
+{
+  "watchFolder": "static/less",
+  "outputFolder": "static/css",
+  "mainFile": "aurora.less",
+  "minified": true,
+  "sourceMap": false,
+  "relativeUrls": true
+}
