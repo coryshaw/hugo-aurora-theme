@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (selectedElement) {
       setTimeout(() => {
         setHoverBorderStyle(selectedElement);
-      }, 1000); // 3000 milliseconds = 3 seconds
+      }, 500); // 3000 milliseconds = 3 seconds
     }
   }, 500);
 });
