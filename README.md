@@ -73,7 +73,7 @@ After successfully installing the Aurora Theme, follow these steps to customize 
 Refer to the [`exampleSite`](https://github.com/coryshaw/hugo-aurora-theme/tree/master/exampleSite) folder for a sample `config.toml`. Copy this file to the root of your Hugo site and adjust the settings to suit your preferences.
 
 ```toml
-baseurl = "http://mysite.com/"
+baseurl = "http://example.com/"
 languageCode = "en-us"
 title = "My Awesome Site"
 theme = "aurora"
