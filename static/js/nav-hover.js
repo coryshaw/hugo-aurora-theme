@@ -29,11 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const primaryNavLinks = document.querySelectorAll(".primary-nav a");
   primaryNavLinks.forEach((item) => {
-    item.addEventListener("mouseenter", (e) => {
+    item.addEventListener(
+      "mouseenter",
       debounce((e) => {
         setHoverBorderStyle(e.target);
-      }, 100);
-    });
+      }, 300)
+    );
     item.addEventListener("mouseleave", () => {
       const selectedElement = document.querySelector(
         ".primary-nav li.selected a"
