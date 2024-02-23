@@ -4,7 +4,7 @@
 			<nav class="primary-nav" role="navigation">
 				<ul>
 					{{ range .Site.Params.navigation }}
-					<li><a href="{{.path}}">{{.name}}</a></li>
+					<li class="{{ if eq .path $.Page.Permalink }}selected{{ end }}"><a href="{{.path}}">{{.name}}</a></li>
 					{{ end }}
 				</ul>
 			</nav>
