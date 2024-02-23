@@ -14,12 +14,25 @@ document.addEventListener("DOMContentLoaded", () => {
     hoverBorder.style.left = `${
       bounds.left + window.scrollX - parentBounds.left - padding
     }px`; // Subtract padding from left
+    hoverBorder.style.opacity = "1"; // Show the hoverBorder
+  };
+
+  const debounce = (func, delay) => {
+    let debounceTimer;
+    return function () {
+      const context = this;
+      const args = arguments;
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => func.apply(context, args), delay);
+    };
   };
 
   const primaryNavLinks = document.querySelectorAll(".primary-nav a");
   primaryNavLinks.forEach((item) => {
     item.addEventListener("mouseenter", (e) => {
-      setHoverBorderStyle(e.target);
+      debounce((e) => {
+        setHoverBorderStyle(e.target);
+      }, 100);
     });
     item.addEventListener("mouseleave", () => {
       const selectedElement = document.querySelector(
@@ -27,6 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       if (selectedElement) {
         setHoverBorderStyle(selectedElement);
+      } else {
+        hoverBorder.style.opacity = "0"; // Hide the hoverBorder
       }
     });
   });
